@@ -1,3 +1,7 @@
+리뷰: 이렇게 짜면 속도가 너무 느리다..! 다른 사람 풀이를 참고했을 때 
+문자열을 Char배열로 변환하여 다루는 것이 속도가 <strong>10배 이상 빠르다.</strong>
+문자열을 String으로 다루는 경우 성능을 유의하자.
+
 # [level unrated] 문자열 여러 번 뒤집기 - 181913 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181913) 

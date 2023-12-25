@@ -24,9 +24,8 @@ class Solution {
     }
 }
 
-
-
-// 1차 시도 : 시간 초과
+// //1차 시도 시간초과
+// class Solution {
 //     public int solution(int n) {
 //         int answer = searchBiggerN(n);
 //         return answer;
@@ -45,3 +44,24 @@ class Solution {
 //         String binaryN = Integer.toBinaryString(n);
 //         return binaryN.length() - binaryN.replaceAll("1","").length();
 //     }
+// }
+
+// //Integer의 bitCount()메서드 사용 시
+// class Solution {
+//     public int solution(int n) {
+//         int answer = searchBiggerN(n);
+//         return answer;
+//     }
+    
+//     private int searchBiggerN(int n){
+//         int countOneOfN = Integer.bitCount(n);
+//         for(int i=n+1;;i++){
+//             if(Integer.bitCount(i) == countOneOfN){
+//                 return i;
+//             }
+//         }
+//     }
+
+// }
+
+

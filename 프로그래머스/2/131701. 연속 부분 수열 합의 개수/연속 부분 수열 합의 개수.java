@@ -9,6 +9,7 @@
 */
 import java.util.*;
 
+//3중포문으로 너무 느림. 개선해보자!
 class Solution {
     public int solution(int[] elements) {
         
@@ -16,19 +17,14 @@ class Solution {
         A:
         for(int i=1; i<=elements.length; i++){
             for(int j=0; j<elements.length; j++){
-                             
-                
                 int tmp = 0;
-              
                 for(int k=j; k<j+i; k++){
-                    tmp += elements[k%elements.length];
+                    tmp +=elements[k%elements.length];
                 }
                 set.add(tmp);
                 if(i == elements.length){
                     break A;    
                 }
-                
-                
             }
         }
         

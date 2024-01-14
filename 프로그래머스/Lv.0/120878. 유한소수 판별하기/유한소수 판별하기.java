@@ -25,9 +25,9 @@ class Solution {
             big = small;
             small = r;
             r = big%small;
-            if(r == 0){
-                return small;
-            }
+            // if(r == 0){
+            //     return small;
+            // }
         }
         return small;
     }

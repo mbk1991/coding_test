@@ -23,21 +23,21 @@ class Solution {
                 leftDistance = ((Math.abs(num-left))/3) +((Math.abs(num-left))%3);
                 rightDistance = ((Math.abs(num-right))/3) +((Math.abs(num-right))%3);
             
-            if(leftDistance<rightDistance){
-               answer += "L";
-               left = num;
-            }else if(leftDistance>rightDistance){
-               answer += "R"; 
-               right = num;
-            }else if(leftDistance==rightDistance){
-               answer += hand.toUpperCase().charAt(0);
-                if(hand.equals("right")){
-                    right = num;
+                if(leftDistance<rightDistance){
+                   answer += "L";
+                   left = num;
+                }else if(leftDistance>rightDistance){
+                   answer += "R"; 
+                   right = num;
+                }else if(leftDistance==rightDistance){
+                   answer += hand.toUpperCase().charAt(0);
+                    if(hand.equals("right")){
+                        right = num;
+                    }
+                    if(hand.equals("left")){
+                        left = num;
+                    }
                 }
-                if(hand.equals("left")){
-                    left = num;
-                }
-            }
             }         
         }
              

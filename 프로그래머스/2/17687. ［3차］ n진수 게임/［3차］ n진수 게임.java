@@ -5,7 +5,7 @@ class Solution {
         
         StringBuilder sb = new StringBuilder();
         
-        for(int i=0; i<=100_000; i++){
+        for(int i=0; i<=999_999_999; i++){
             sb.append(Integer.toString(i,n).toUpperCase());
             if(sb.length() > t*m) break;
         }

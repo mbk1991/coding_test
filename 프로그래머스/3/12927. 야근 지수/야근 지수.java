@@ -4,8 +4,6 @@ class Solution {
     public long solution(int n, int[] works) {
         long answer = 0;
         
-        Arrays.sort(works);
-        
         Queue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
         for(int i:works){
             pq.offer(i);
@@ -17,8 +15,6 @@ class Solution {
             pq.offer(--a);
             --n;
         }
-        
-        System.out.println(pq);
         
         while(pq.size()>0){
             int p = pq.poll();

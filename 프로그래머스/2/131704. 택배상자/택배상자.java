@@ -15,28 +15,16 @@ class Solution {
                 continue;
             }
             
-            if(o == curr){
-                answer ++;
-                curr ++;
-                continue;
-            }
-            
             while(o != curr){
                 stack.push(curr);
-                curr++;
-                
-                if(o == curr){
-                    answer ++;
-                    curr ++;
-                    break;
-                }
-                
+                curr++;           
                 if(curr > order.length){
                     return answer;
                 }
-                
-            
             }
+            answer ++;
+            curr ++;
+            
         }
         
         return answer;
